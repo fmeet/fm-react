@@ -109,7 +109,7 @@ export default class HTMLExporter extends Exporter {
                         roomName: () => <b>{ this.room.name }</b>,
                         exporterDetails: () => (
                             <a
-                                href={`https://matrix.to/#/${exporter}`}
+                                href={`https://link.facemeeting.com/#/${exporter}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

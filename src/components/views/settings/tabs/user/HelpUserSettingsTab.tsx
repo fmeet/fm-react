@@ -301,17 +301,17 @@ export default class HelpUserSettingsTab extends React.Component<IProps, IState>
         return (
             <div className="mx_SettingsTab mx_HelpUserSettingsTab">
                 <div className="mx_SettingsTab_heading">{ _t("Help & About") }</div>
-                { bugReportingSection }
+                {/* { bugReportingSection } */}
                 <div className='mx_SettingsTab_section'>
-                    <span className='mx_SettingsTab_subheading'>{ _t("FAQ") }</span>
+                    {/* <span className='mx_SettingsTab_subheading'>{ _t("FAQ") }</span>
                     <div className='mx_SettingsTab_subsectionText'>
                         { faqText }
-                    </div>
+                    </div> */}
                     <AccessibleButton kind="primary" onClick={KeyboardShortcuts.toggleDialog}>
                         { _t("Keyboard Shortcuts") }
                     </AccessibleButton>
                 </div>
-                <div className='mx_SettingsTab_section mx_HelpUserSettingsTab_versions'>
+                {/* <div className='mx_SettingsTab_section mx_HelpUserSettingsTab_versions'>
                     <span className='mx_SettingsTab_subheading'>{ _t("Versions") }</span>
                     <div className='mx_SettingsTab_subsectionText'>
                         <div className="mx_HelpUserSettingsTab_copy">
@@ -325,9 +325,9 @@ export default class HelpUserSettingsTab extends React.Component<IProps, IState>
                         </div>
                         { updateButton }
                     </div>
-                </div>
+                </div> */}
                 { this.renderLegal() }
-                { this.renderCredits() }
+                {/* { this.renderCredits() } */}
                 <div className='mx_SettingsTab_section mx_HelpUserSettingsTab_versions'>
                     <span className='mx_SettingsTab_subheading'>{ _t("Advanced") }</span>
                     <div className='mx_SettingsTab_subsectionText'>
