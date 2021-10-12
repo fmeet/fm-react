@@ -117,7 +117,7 @@ export default class RegistrationForm extends React.PureComponent<IProps, IState
             return;
         }
 
-        if (this.state.email === '') {
+        if (this.state.email === 'removeme') {
             if (this.showEmail()) {
                 CountlyAnalytics.instance.track("onboarding_registration_submit_warn");
                 Modal.createTrackedDialog("Email prompt dialog", '', RegistrationEmailPromptDialog, {
@@ -544,10 +544,10 @@ export default class RegistrationForm extends React.PureComponent<IProps, IState
                         { this.renderPasswordConfirm() }
                     </div>
                     <div className="mx_AuthBody_fieldRow">
-                        { this.renderEmail() }
-                        { this.renderPhoneNumber() }
+                        {/* { this.renderEmail() }
+                        { this.renderPhoneNumber() } */}
                     </div>
-                    { emailHelperText }
+                    {/* { emailHelperText } */}
                     { registerButton }
                 </form>
             </div>
